@@ -1,0 +1,279 @@
+body {
+  background-color: aliceblue;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Oooh Baby";
+  font-weight: 500;
+  font-size: 40px;
+}
+#text {
+  font-size: 40px;
+}
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+  background-color: aqua;
+  text-align: center;
+}
+.vertical-center {
+  position: absolute;
+}
+.slide {
+  display: inline-block;
+}
+.none {
+  display: none;
+}
+.responsive {
+  width: 100%;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 10%;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.next:hover {
+  background-color: grey;
+  color: black;
+  transition: 1s;
+  opacity: 50%;
+}
+.prev:hover {
+  background-color: grey;
+  color: black;
+  opacity: 50%;
+  transition: 1s;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+.dot-container {
+  position: absolute;
+  bottom: 10px; 
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.6s ease;
+}
+.dot-active{
+  background-color: #646363;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+.number {
+  position: absolute;
+  left: 3%;
+  font-family: "Oooh Baby";
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 50px;
+  }
+  .dot-container {
+    position: absolute;
+    bottom: 15px; 
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .dot {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+  }
+  .dot-active{
+    background-color: #646363;
+  }
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 10%;
+    background-color: black;
+    padding: 13px;
+    opacity: 60%;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .span {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 50px;
+  }
+  #text {
+    font-size: 35px;
+  }
+  .dot-container {
+    bottom: 16px; 
+  }
+  .dot {
+    height: 17px;
+    width: 17px;
+  }
+  .dot-active{
+    background-color: #646363;
+  }
+  .prev,
+  .next {
+    padding: 13px;
+    opacity: 60%;
+  }
+  .span {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 50px;
+  }
+  #text {
+    font-size: 28px;
+  }
+  .dot-container {
+    bottom: 16px;
+  }
+  .dot {
+    height: 17px;
+    width: 17px;
+  }
+  .prev,
+  .next {
+    padding: 13px;
+    opacity: 60%;
+  }
+  .span {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  #text {
+    font-size: 23px;
+  }
+  .dot-container {
+    bottom: 12px; 
+  }
+  .dot {
+    height: 14px;
+    width: 14px;
+  }
+  .prev,
+  .next {
+    padding: 6px;
+  }
+  .span {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 35px;
+  }
+  #text {
+    font-size: 20px;
+  }
+  .dot-container {
+    bottom: 8px; 
+  }
+  .dot {
+    height: 12px;
+    width: 12px;
+  }
+  .prev,
+  .next {
+    padding: 5px;
+  }
+  .span {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 365px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .dot-container {
+    bottom: 6px;
+  }
+  .dot {
+    height: 8px;
+    width: 8px;
+  }
+  .prev,
+  .next {
+    padding: 4px;
+  }
+  .span {
+    font-size: 17px;
+  }
+  @media screen and (max-width: 270px) {
+    h1 {
+      font-size: 20px;
+    }
+    .dot-container {
+      bottom: 5px; 
+    }
+    .dot {
+      height: 6px;
+      width: 6px;
+    }
+    .prev,
+    .next {
+      padding: 4px;
+    }
+    .span {
+      font-size: 10px;
+    }
+  }
+}
